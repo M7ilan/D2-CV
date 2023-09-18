@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 300ms ease;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.pad {
+  @apply py-2 px-4 bg-OpenColor-gray-2 rounded-xl ring-default;
+}
+
+.ring-default {
+  @apply hover:ring-[3px] ring-offset-2 ring-current;
+}

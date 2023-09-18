@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001 | npx local-ssl-proxy --source 3000 --target 3001 --cert localhost.pem --key localhost-key.pem",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
