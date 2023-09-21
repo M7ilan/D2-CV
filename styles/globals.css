@@ -21,5 +21,5 @@ body {
 }
 
 .ring-default {
-  @apply hover:ring-[3px] ring-offset-2 ring-current;
+  @apply hover:ring ring-offset-2 ring-current;
 }
