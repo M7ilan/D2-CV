@@ -6,9 +6,7 @@ export const authOptions = {
 		BungieProvider({
 			clientId: process.env.BUNGIE_CLIENT_ID,
 			clientSecret: process.env.BUNGIE_CLIENT_SECRET,
-			headers: {
-				"X-API-Key": process.env.BUNGIE_API_KEY,
-			},
+			httpOptions: { headers: { 'X-API-Key': process.env.BUNGIE_API_KEY } },
 		}),
 	],
 };
